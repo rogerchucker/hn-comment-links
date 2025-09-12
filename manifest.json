@@ -1,0 +1,21 @@
+{
+"manifest_version": 3,
+"name": "HN Comment Links",
+"version": "1.0.0",
+"description": "List all hyperlinks appearing inside Hacker News comment bodies on item pages.",
+"permissions": ["activeTab", "tabs", "storage", "clipboardWrite"],
+"host_permissions": ["https://news.ycombinator.com/*"],
+"action": {
+"default_title": "HN Comment Links",
+"default_popup": "popup.html"
+},
+"content_scripts": [
+{
+"matches": [
+"https://news.ycombinator.com/item*"
+],
+"js": ["content.js"],
+"run_at": "document_idle"
+}
+]
+}

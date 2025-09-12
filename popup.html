@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HN Comment Links</title>
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+<header>
+<h1>HN Comment Links</h1>
+<div id="meta"></div>
+<div class="controls">
+<label><input type="checkbox" id="showUnique" checked /> Unique by URL</label>
+<label><input type="checkbox" id="groupByDomain" checked /> Group by domain</label>
+<input type="text" id="search" placeholder="Filter by text/domain/url" />
+</div>
+<div class="actions">
+<button id="copyAll">Copy all URLs</button>
+<button id="exportCsv">Export CSV</button>
+<button id="refresh">Refresh</button>
+</div>
+</header>
+
+
+<main id="list"></main>
+
+
+<template id="item-tpl">
+<div class="item">
+<div class="topline">
+<a class="url" target="_blank" rel="noreferrer noopener"></a>
+<span class="domain"></span>
+</div>
+<div class="meta">
+<span class="author"></span>
+<a class="permalink" target="_blank" rel="noreferrer noopener">comment</a>
+</div>
+<div class="snippet"></div>
+</div>
+</template>
+
+
+<script src="popup.js"></script>
+</body>
+</html>
