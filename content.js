@@ -77,3 +77,22 @@ function extractLinks() {
 
   return { all, unique, grouped };
 }
+
+// Notify background of link count for badge updates
+function notifyBackground() {
+  try {
+    const anchors = document.querySelectorAll('.commtext a[href]');
+    const seen = new Set();
+    let unique = 0;
+    anchors.forEach(a => {
+      const u = a.href;
+      if (!seen.has(u)) {
+        seen.add(u);
+        unique++;
+      }
+    });
+    chrome.runtime.sendMessage({ type: 'link_count', count: unique });
+  } catch (_) {
+    // ignore
+  }
+}
