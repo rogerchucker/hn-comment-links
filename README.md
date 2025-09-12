@@ -1,4 +1,5 @@
-![screenshot](https://github.com/rogerchucker/hn-comment-links/raw/main/docs/screenshot-hn-links-1.png)
+
+<img src="docs/screenshot-hn-links-1.png" alt="drawing" width="500"/>
 
 # HN Comment Links
 
