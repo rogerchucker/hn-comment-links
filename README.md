@@ -47,7 +47,6 @@ HN Comment Links requests only the minimal set of permissions needed to perform 
 |-----------|---------|
 | `activeTab` | Allows the extension to read and parse the content of the currently active tab so it can extract comment links. |
 | `tabs` | Enables updating the badge count and icon when you switch between tabs. |
-| `storage` | Stores your UI preferences (e.g. whether deduplication or grouping is enabled) locally in your browser. |
 | `clipboardWrite` | Lets you copy all links to the clipboard when you click **Copy all**. |
 | Host permission `https://news.ycombinator.com/*` | Restricts the content script to run only on Hacker News item pages. |
 

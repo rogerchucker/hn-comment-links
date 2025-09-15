@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "HN Comment Links",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "List all hyperlinks appearing inside Hacker News comment bodies on item pages.",
-  "permissions": ["activeTab", "tabs", "storage", "clipboardWrite"],
+  "permissions": ["activeTab", "tabs", "clipboardWrite"],
   "host_permissions": ["https://news.ycombinator.com/*"],
 
   "icons": {
